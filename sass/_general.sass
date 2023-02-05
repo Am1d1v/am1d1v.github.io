@@ -1,0 +1,610 @@
+header
+    position: relative    
+
+
+nav
+    height: 54px
+    background-color: #212121
+    width: 100%
+    &.nav
+        padding: 10px 70px
+        text-decoration: none
+
+
+header
+    & .menu
+        display: flex
+        justify-content: space-between
+        padding: 13px 70px
+        margin: 0
+        text-decoration: none
+        & .menu_link
+            font-weight: 300
+            color: white
+            text-decoration: none
+        & .menu_item
+            border-right: 2px dotted white
+            padding-right: 27px
+            height: 25px
+            &:last-child
+                border-right: none
+    & .subheader
+        height: 120px
+        width: 100%
+        background-color: rgba(0,0,0, .6)
+        position: absolute
+        & .subheader_logo
+            display: block
+            max-width: 100%
+            margin-top: 18px
+        & .subheader_official
+            margin-top: 6px
+            font-size: 15px
+            color: white
+    & .subheader_call
+        display: block
+        font-size: 16px
+        color: white
+        margin-top: 20px
+        text-align: center
+    & .subheader_phone
+        display: block
+        margin-top: 8px
+        color: white
+        font-size: 25px
+        text-decoration: none
+        text-align: center
+    & .subheader_btn
+        width: 180px
+        height: 60px
+        border: none
+        border-radius: 5px
+        background-color: #1EACC7
+        font-size: 18px
+        margin-top: 25px
+        color: white
+        text-transform: uppercase
+        +btn_hover
+
+.promo
+    min-height: 800px
+    background: url('../img/uber_bg.png') center center /cover no-repeat
+    padding: 30px 0 135px 0
+    width: 100%
+    & .promo_header
+        font-weight: 700
+        font-size: 60px
+        color: white
+        text-transform: uppercase
+        line-height: 60px
+        margin: 0
+        text-align: center
+        margin-top: 150px
+    & .promo_subheader
+        font-weight: 400
+        font-size: 36px
+        color: white
+        line-height: 36px
+        margin: 0
+        margin-top: 60px
+        text-align: center
+    & .promo_descr
+        font-weight: 400
+        font-size: 20px
+        line-height: 24px
+        color: white
+        text-align: center
+        margin-top: 25px
+    & .promo_btn
+        display: block
+        margin: 0 auto
+        margin-top: 100px
+        background-color: #1EACC7
+        width: 260px
+        height: 63px
+        border: none
+        border-radius: 5px
+        color: white
+        font-size: 20px
+        font-weight: 400
+        +btn_hover
+
+
+.reasons
+    width: 100%
+    background-color: white
+    & .benefits_logo
+        width: 115px
+        height: 27px
+        background-color: black
+        color: white
+        margin-top: 15px
+        text-align: center
+        text-transform: uppercase
+        font-size: 14px
+        padding-top: 3px
+    & .subtitle
+        text-transform: uppercase    
+        text-align: center
+        margin-top: 33px
+        font-weight: 700
+        font-size: 38px
+    & .elipse
+        margin-top: 25px
+        display: flex
+        width: 120px
+        height: 120px
+        background-color: #1a89c9
+        border-radius: 100%
+        align-items: center
+        justify-content: center
+    & .reasons_descr
+        width: 500px
+        padding-left: 30px  
+        text-align: left
+        margin: 0 auto
+        margin-top: 15px
+        margin-bottom: 15px
+    &_subdescr
+        display: flex
+        
+    & span
+        text-align: left
+        color: aqua
+        font-weight: 500
+        font-size: 20px
+    & .workreasons
+        display: flex
+        margin-top: 30px
+        height: 200px
+        
+.mobile
+    min-height: 850px
+    background-color: #d8d8d8
+    & .opportunity
+        display: block
+        margin: 0 auto
+        width: 120px
+        height: 24px
+        background-color: black
+        font-size: 15px
+        color: white
+        text-align: center
+        font-weight: 400
+        margin-top: 50px
+        font-size: 16px
+    & .mobile_header
+        display: block
+        text-align: center
+        color: #222222
+        margin-top: 36px 
+        text-transform: uppercase 
+        font-weight:  600
+        font-size: 38px  
+    & .mobile_subheader
+        font-size: 25px
+        text-align: center
+        margin-top: 12px
+        font-weight: 400
+    & .mobile_image1
+        width: 320px
+        height: 280px
+        margin-top: 30px
+        background: url(../img/img1.png)
+        color: white
+        font-size: 24px
+        text-align: center
+        padding-top: 60px
+        text-transform: uppercase
+        font-weight: 300
+        margin-left: 66px
+        & .round
+            display: flex
+            width: 30px
+            height: 30px
+            position: absolute
+            background-color: black
+            border-radius: 100%
+            margin: 0 auto
+            margin-top: 72px
+            justify-content: center
+            align-items: center
+            margin-left: 150px
+            &:before
+                content: ''
+                display: block
+                width: 18px
+                height: 3px
+                background-color: aqua
+            &:after
+                content: ''
+                position: absolute
+                left: 45%
+                display: block
+                height: 18px
+                width: 3px
+                background-color: aqua
+            &:hover
+                &:before, &::after
+                    background-color: white
+                
+
+    & .mobile_image2
+        width: 320px
+        height: 280px
+        margin-top: 30px
+        background: url(../img/img2.png)
+        color: white
+        font-size: 24px
+        text-align: center
+        padding-top: 60px
+        text-transform: uppercase
+        font-weight: 300
+        margin-left: 66px
+        & .round
+            display: flex
+            width: 30px
+            height: 30px
+            position: absolute
+            background-color: black
+            border-radius: 100%
+            margin: 0 auto
+            margin-top: 72px
+            justify-content: center
+            align-items: center
+            margin-left: 150px
+            &:before
+                content: ''
+                display: block
+                width: 18px
+                height: 3px
+                background-color: aqua
+            &:after
+                content: ''
+                position: absolute
+                left: 45%
+                display: block
+                height: 18px
+                width: 3px
+                background-color: aqua
+            &:hover
+                &:before, &::after
+                    background-color: white    
+    
+    & .mobile_image3
+        width: 320px
+        height: 280px
+        margin-top: 30px
+        background: url(../img/img3.png)
+        color: white
+        font-size: 24px
+        text-align: center
+        padding-top: 60px
+        text-transform: uppercase
+        font-weight: 300
+        margin-left: 66px
+        justify-content: center
+        align-items: center
+        & .round
+            display: flex
+            width: 30px
+            height: 30px
+            position: absolute
+            background-color: black
+            border-radius: 100%
+            margin: 0 auto
+            margin-top: 72px
+            justify-content: center
+            align-items: center
+            margin-left: 150px
+            &:before
+                content: ''
+                display: block
+                width: 18px
+                height: 3px
+                background-color: aqua
+            &:after
+                content: ''
+                position: absolute
+                left: 45%
+                display: block
+                height: 18px
+                width: 3px
+                background-color: aqua
+            &:hover
+                &:before, &::after
+                    background-color: white
+
+    & .mobile_image4
+        width: 320px
+        height: 280px
+        margin-top: 30px
+        background: url(../img/img4.png)
+        color: white
+        font-size: 24px
+        text-align: center
+        padding-top: 60px
+        text-transform: uppercase
+        font-weight: 300
+        margin-left: 66px
+        justify-content: center
+        align-items: center
+        & .round
+            display: flex
+            width: 30px
+            height: 30px
+            position: absolute
+            background-color: black
+            border-radius: 100%
+            margin: 0 auto
+            margin-top: 72px
+            justify-content: center
+            align-items: center
+            margin-left: 150px
+            &:before
+                content: ''
+                display: block
+                width: 18px
+                height: 3px
+                background-color: aqua
+            &:after
+                content: ''
+                position: absolute
+                left: 45%
+                display: block
+                height: 18px
+                width: 3px
+                background-color: aqua
+            &:hover
+                &:before, &::after
+                    background-color: white
+
+    & .mobile_image5
+        width: 320px
+        height: 280px
+        margin-top: 30px
+        background: url(../img/img5.png)
+        color: white
+        font-size: 24px
+        text-align: center
+        padding-top: 60px
+        text-transform: uppercase
+        font-weight: 300
+        margin-left: 66px
+        justify-content: center
+        align-items: center
+        & .round
+            display: flex
+            width: 30px
+            height: 30px
+            position: absolute
+            background-color: black
+            border-radius: 100%
+            margin: 0 auto
+            margin-top: 72px
+            justify-content: center
+            align-items: center
+            margin-left: 150px
+            &:before
+                content: ''
+                display: block
+                width: 18px
+                height: 3px
+                background-color: aqua
+            &:after
+                content: ''
+                position: absolute
+                left: 45%
+                display: block
+                height: 18px
+                width: 3px
+                background-color: aqua
+            &:hover
+                &:before, &::after
+                    background-color: white
+
+    & .mobile_image6
+        width: 320px
+        height: 280px
+        margin-top: 30px
+        background: url(../img/img6.png)
+        color: white
+        font-size: 24px
+        text-align: center
+        padding-top: 60px
+        text-transform: uppercase
+        font-weight: 300
+        margin-left: 66px
+        justify-content: center
+        align-items: center
+        & .round
+            display: flex
+            width: 30px
+            height: 30px
+            position: absolute
+            background-color: black
+            border-radius: 100%
+            margin: 0 auto
+            margin-top: 72px
+            justify-content: center
+            align-items: center
+            margin-left: 150px
+            &:before
+                content: ''
+                display: block
+                width: 18px
+                height: 3px
+                background-color: aqua
+            &:after
+                content: ''
+                position: absolute
+                left: 45%
+                display: block
+                height: 18px
+                width: 3px
+                background-color: aqua
+            &:hover
+                &:before, &::after
+                    background-color: white    
+
+.car
+    & .car_bg
+        height: 650px
+        display: relative
+        width: 100% 
+        & .car_bg_top
+            height: 450px
+            background-color: black
+            width: 100%
+            & .oppo
+                display: flex
+                margin: 0 auto
+                background-color: white
+                color: black
+                width: 120px
+                height: 24px
+                text-align: center
+                justify-content: center
+        & .header
+            display: block
+            text-align: center
+            color: white            
+        & .subheader
+            display: block
+            text-align: center
+            color: white 
+        & .car_img
+            display: block
+            margin: 0 auto
+            margin-top: 45px
+        & .car_descr
+            display: block
+            text-align: center
+            margin-top: 120px
+            
+.require
+    min-height: 600px
+    background-color: white
+    padding: 36px 0 36px 0
+    & .require_oppo
+        margin: 0 auto
+        text-align: center
+        margin-top: 30px
+        background-color: black
+        color: white
+        width: 120px
+        height: 24px
+        font-weight: 300
+        font-size: 15px
+        text-transform: uppercase
+    & .require_condition
+        text-align: center
+        margin-top: 20px
+        text-transform: uppercase
+        font-size: 40px
+        font-weight: 500
+    &_block
+        margin: 33px 0
+        &_nmb
+            margin-bottom: 0px
+            & .require_title
+                color: red
+                
+    &_title
+        color: aqua
+        font-weight: 600
+        font-size: 20px
+        line-height: 24px
+    &_list
+        list-style-type: none
+        padding-left: 50px
+        margin-top: 20px
+        & .li
+            display: block
+            font-weight: 600
+            font-size: 18px
+            line-height: 24px
+            margin-bottom: 10px
+            &:before
+                content: ''
+                display: inline-block
+                vertical-align: middle
+                width: 21px
+                height: 21px
+                background: url('../icons/Rectangle.png') center center /cover no-repeat
+                margin-right: 10px
+        & .require_descr
+            font-size: 18px
+            font-weight: 500
+
+             
+.world
+    height: 700px
+    & .world_bg
+        position: relative
+        width: 100%
+        height: 700px
+        background: url('../img/world_bg.png')
+    & .cities
+        position: absolute
+        color: black
+        text-align: center
+        display: block 
+        margin: 0 auto
+        margin-top: 45px
+        width: 120px
+        height: 24px
+        background-color: #fff
+        right: 45%
+        &_title
+            color: white
+            text-align: center
+            padding-top: 100px
+            padding-left: 40px
+        &_subtitle
+            color: white
+            text-align: center
+            padding-left: 30px
+            font-weight: 400
+            font-size: 18px
+        &_bottom
+            text-align: center
+            padding-top: 450px
+            font-weight: 500
+            font-size: 18px
+            text-transform: uppercase
+        &_footer
+            text-decoration: none 
+            color: #1FBAD6   
+            
+
+.footer_area
+    height: 300px
+    background-color: #ffffff
+    position: relative
+    & .footer_line
+        display: block
+        width: 300px
+        height: 6px
+        background-color: aqua
+        position: absolute
+        margin-left: 40%
+        margin-top: 12px
+    & .footer_menu
+        list-style-type: none
+    & .footer_list
+        display: flex
+        justify-content: space-between
+        margin-top: 35px
+        font-weight: 500
+        font-size: 20px
+        text-transform: uppercase
+    & .footer_underlist
+        margin-top: 20px
+        display: flex
+        justify-content: space-between
+        font-weight: 300
+        font-size: 18px
+        text-transform: uppercase
+    & .footer_underlist_menu
+        list-style-type: none
